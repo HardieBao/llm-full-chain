@@ -160,6 +160,31 @@ npm run docs:dev
 
 ---
 
+## 🌟 站在巨人肩膀上：全球顶级大模型大师路线与神课索引
+
+本仓库并非闭门造车，而是将全球 5 大顶尖门派的精华熔铸为一条连贯的实战链路。在学习对应章节时，强烈建议配合以下大师的原版教材与神课食用：
+
+| 大师 / 机构 | 代表作 / 神课 | 核心门派与专长 | 对应本仓库章节 |
+|---|---|---|---|
+| **Andrej Karpathy**<br>*(前 Tesla AI 总监 / OpenAI 联创)* | • [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)<br>• [Eureka Labs / LLM101n](https://github.com/karpathy/LLM101n) | **【从零手搓派鼻祖】**<br>`micrograd → makemore → nanoGPT → minbpe → llama2.c → llm.c`，把底层张量与反向传播剥得干干净净。 | `00` · `01` · `02` · `02.5` |
+| **Maxime Labonne**<br>*(Liquid AI 后训练负责人)* | • [mlabonne/llm-course](https://github.com/mlabonne/llm-course) *(45k+ ⭐)*<br>• [Uncensor any LLM with Abliteration](https://huggingface.co/blog/mlabonne/abliteration) | **【开源微调与破甲实战派】**<br>分为 LLM Scientist / Engineer 两条线，也是激活空间擦除拒答向量（Abliteration）破甲技术的核心推广者。 | `06` · `07` · `11` · `12` |
+| **Sebastian Raschka**<br>*(Lightning AI 首席教育官)* | • [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) *(35k+ ⭐)* | **【立体图解学院派】**<br>为每一行注意力矩阵乘法和架构演进（GPT-2 → Llama 3 → Qwen2.5）绘制了极其直观的彩色张量流向图。 | `01` · `03` |
+| **Stanford CS336**<br>*(Percy Liang & T. Hashimoto)* | • [CS336: Language Modeling from Scratch](https://stanford-cs336.github.io/spring2024/) | **【工业级预训练系统神课】**<br>手写 BPE、手写 FlashAttention Triton Kernel、手写 3D 分布式并行、MinHash 数据清洗与 Scaling Law 拟合。 | `04` · `05` · `05.5` · `07` |
+| **Nathan Lambert**<br>*(AllenAI OLMo / Tülu 负责人)* | • [RLHF Book](https://rlhfbook.com/)<br>• [allenai/open-instruct](https://github.com/allenai/open-instruct) | **【现代后训练与 RL 理论圣经】**<br>从 SFT、Reward Model、PPO、DPO 一路讲透到 2025 最新的 **DeepSeek-R1 / GRPO** 强化学习配方。 | `06` · `07.5` · `08` |
+| **Datawhale 中文社区** | • [self-llm (开源大模型食用指南)](https://github.com/datawhalechina/self-llm)<br>• [happy-llm](https://github.com/datawhalechina/happy-llm) | **【中文生态与国产模型保姆级实战】**<br>针对国内算力与镜像环境，提供 Qwen / DeepSeek / InternLM 等国产模型的部署与微调脚本。 | `03` · `06` · `12` |
+
+### 📊 横向对比：`LLM-Full-Chain` 补齐了哪些空白？
+
+| 覆盖维度 | Karpathy `Zero to Hero` | Raschka `From Scratch` | Labonne `llm-course` | Stanford `CS336` | **本仓库 `LLM-Full-Chain`** |
+|---|:---:|:---:|:---:|:---:|:---:|
+| **底层源码手搓 (`01~03`)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **端侧量化与高并发推理 (`04~05`)** | ⭐⭐⭐ | ⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **2025 GRPO/DAPO 科学消融 (`07.5`)** | ❌ | ❌ | ⭐⭐ | ❌ | **⭐⭐⭐⭐⭐ (内置7组消融)** |
+| **企业脏数据/生产RAG/可控Agent/LLMOps (`12~15`)** | ❌ | ❌ | ⭐⭐⭐ | ❌ | **⭐⭐⭐⭐⭐ (四大企业实战)** |
+| **红队注入/RAG投毒/权重破甲 (`11`)** | ❌ | ❌ | ⭐⭐⭐ | ❌ | **⭐⭐⭐⭐⭐ (攻防全链路)** |
+
+---
+
 ## 🤝 贡献与开源协议
 
 欢迎提交 Issue 或 PR 补充你的源码批注、`demos/` 实验脚本或消融实验结果。本项目采用 [MIT License](./LICENSE) 开源。
