@@ -1,0 +1,8 @@
+experiment:
+  group: "A_baseline"
+  description: "不训练，直接评基座模型"
+
+model:
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+
+# 只跑 eval.py，不跑 train_grpo.py

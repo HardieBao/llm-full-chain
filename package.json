@@ -1,0 +1,14 @@
+{
+  "name": "llm-full-chain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "大模型全链路硬核实战：从 600 行源码、GRPO 后训练消融、企业级 RAG/Agent 到红队破甲",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

@@ -1,0 +1,49 @@
+# 本地私有/辅助目录（不随开源教程发布）
+.qoder/
+00-辅助学习工具/
+辅助学习项目/
+_private/
+
+# 读者通过 scripts/clone_repos.py 按需拉取的第三方源码仓库
+01-nanoGPT-懂原理/nanoGPT/
+02-llama2.c-懂推理/llama2.c/
+02.5-tokenizer-BPE/minbpe/
+03-transformers-Llama-工业实现/transformers/
+04-llama.cpp-性能工程/llama.cpp/
+05-vllm-性能工程/vllm/
+05.5-预训练工程/nanotron/
+06-trl-微调/trl/
+07-unsloth-微调/unsloth/
+07.5-后训练配方/open-r1/
+08-评估-eval/lm-evaluation-harness/
+09-dify-应用层/dify/
+10-llama_index-应用层/llama_index/
+11-LLM安全-破甲破限/HarmBench/
+12-垂直领域模型实战/LLaMA-Factory/
+13-企业级RAG实战/ragflow/
+14-企业级Agent实战/OpenHands/
+15-LLMOps与上线工程/langfuse/
+
+# 模型权重、训练产出与缓存
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+**/results/
+**/outputs/
+**/checkpoints/
+**/wandb/
+**/swanlog/
+
+# Python / Node / VitePress 构建缓存
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+.DS_Store
+Thumbs.db

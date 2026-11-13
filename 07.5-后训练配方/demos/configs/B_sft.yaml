@@ -1,0 +1,15 @@
+experiment:
+  group: "B_sft"
+  description: "SFT only，500 条正确解"
+
+model:
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+
+data:
+  task: "gsm8k"
+  num_samples: 500
+
+sft:
+  lr: 2e-5
+  epochs: 3
+  max_steps: 500

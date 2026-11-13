@@ -1,0 +1,25 @@
+experiment:
+  group: "F_grpo_dapo"
+  description: "GRPO + DAPO 四个修复"
+
+model:
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+
+data:
+  task: "gsm8k"
+  num_samples: 500
+
+grpo:
+  lr: 1e-6
+  bs: 2
+  grad_accum: 8
+  num_generations: 8
+  max_completion: 512
+  max_prompt: 512
+  temperature: 0.9
+  beta: 0.0
+  epsilon: 0.2
+  epsilon_high: 0.28     # DAPO clip-higher：上界更宽
+  scale_rewards: false   # token-level loss（DAPO）
+  dynamic_sampling: true  # 过滤全对/全错组（trl 内部处理）
+  max_steps: 500

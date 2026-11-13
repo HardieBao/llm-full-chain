@@ -1,0 +1,23 @@
+experiment:
+  group: "C_grpo"
+  description: "GRPO only，无 SFT 冷启动"
+
+model:
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+
+data:
+  task: "gsm8k"
+  num_samples: 500
+
+grpo:
+  lr: 1e-6
+  bs: 2
+  grad_accum: 8
+  num_generations: 8
+  max_completion: 512
+  max_prompt: 512
+  temperature: 0.9
+  beta: 0.0              # 无 KL penalty
+  epsilon: 0.2
+  scale_rewards: true    # 原版 GRPO：std 归一化
+  max_steps: 500
