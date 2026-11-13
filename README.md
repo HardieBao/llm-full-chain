@@ -185,6 +185,51 @@ npm run docs:dev
 
 ---
 
+## 🎬 YouTube 殿堂级视频课伴读指南（精确到单集）
+
+拒绝盲目刷几百小时网课！以下仅精选全球公认最顶级的 **YouTube 硬核视频单集**，并与本仓库 `00 ~ 15` 章节一一绑定。**建议在阅读对应章节源码卡壳时，直接点开对应单集配合食用**：
+
+### 1. Andrej Karpathy 个人频道（全网大模型第一神作，总计 12 小时顶一学期）
+> 频道主页：[@AndrejKarpathy](https://www.youtube.com/@AndrejKarpathy)
+
+| 必看单集（点击直达 YouTube） | 时长 | 核心干货 | 绑定本仓库章节 |
+|---|---|---|---|
+| 📺 **[Deep Dive into LLMs like ChatGPT (2025最新)](https://www.youtube.com/watch?v=7xTGNNLPyMI)** | 3.5h | 全网最佳全局认知视频：从预训练洗数据、Tokenizer、SFT 一路讲透到 **DeepSeek-R1 强化学习（Thinking Models）** | `00` · `07.5-后训练配方` |
+| 📺 **[Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)** | 2.0h | 打开编辑器从零手敲 `nanoGPT`，把 Self-Attention 每一处张量维度变换掰碎讲透 | `01-nanoGPT-懂原理` |
+| 📺 **[Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)** | 2.0h | 手写 `minbpe`，揭秘为什么算术错误、多语言退化、编码越狱绕过根源全在 Tokenizer | `02.5-tokenizer-BPE` · `11` |
+| 📺 **[Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU)** | 4.0h | 工业级预训练复现：FlashAttention、混合精度、MFU 算力压榨、DDP 分布式与评测 | `05.5-预训练工程` · `08-评估` |
+| 📺 **[Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)** | 1.0h | 提出“LLM OS”架构，**最后 15 分钟专门演示 Jailbreak、网页/图片间接注入与数据投毒** | `11-LLM安全-破甲破限` |
+
+### 2. 3Blue1Brown（全宇宙最强的数学与高维几何空间可视化）
+> 频道主页：[@3blue1brown](https://www.youtube.com/@3blue1brown)
+
+| 必看单集（点击直达 YouTube） | 时长 | 核心干货 | 绑定本仓库章节 |
+|---|---|---|---|
+| 📺 **[But what is a GPT? Visual intro to Transformers (Ch.5)](https://www.youtube.com/watch?v=wjZofJX0v4M)** | 27m | 丝滑 3D 动画建立词嵌入（Embedding）与高维语义空间直觉 | `00` · `01` |
+| 📺 **[Attention in transformers, visually explained (Ch.6)](https://www.youtube.com/watch?v=eMlx5fFNoYc)** | 26m | 看完这 26 分钟，终身不忘 `Q × K^T / √d` 在几何空间里到底在干什么 | `01` · `03` |
+| 📺 **[How might LLMs store facts (MLP 知识存储揭秘, Ch.7)](https://www.youtube.com/watch?v=9-Jl0dxWQs8)** | 22m | 解释激活空间中的特征方向——**这也是 `11` 章 Abliteration 擦除拒答向量的几何基础** | `03` · `11-LLM安全` |
+
+### 3. Umar Jamil（前半集白板手推数学公式 + 后半集逐行敲 PyTorch）
+> 频道主页：[@umarjamilai](https://www.youtube.com/@umarjamilai)
+
+| 必看单集（点击直达 YouTube） | 时长 | 核心干货 | 绑定本仓库章节 |
+|---|---|---|---|
+| 📺 **[Coding LLaMA 2 from scratch in PyTorch](https://www.youtube.com/watch?v=oM4VmoabDAI)** | 2.5h | 白板推导并手写 **KV Cache、RoPE 旋转位置编码、RMSNorm、GQA 分组查询注意力、SwiGLU** | `02-llama2.c` · `03-transformers` |
+| 📺 **[LoRA & QLoRA from scratch (Math + Code)](https://www.youtube.com/watch?v=PXWYUTMt-AU)** | 1.5h | 讲透低秩矩阵分解与 4-bit NormalFloat 分位数量化原理 | `06-trl` · `07-unsloth` |
+| 📺 **[Direct Preference Optimization (DPO) Math & Code](https://www.youtube.com/watch?v=hvGa5Mba4c8)** | 1.5h | 从 RLHF 的 KL 约束目标函数一步步推导出 DPO 损失函数并手写实现 | `06-trl` · `07.5` |
+
+### 4. 斯坦福公开课 / GPU Mode / 华语双璧（进阶专项）
+
+| 频道 / 课程 | 推荐必看内容 | 绑定本仓库章节 |
+|---|---|---|
+| **Stanford CS229**<br>*(Yann Dubois)* | 📺 **[Building Large Language Models (90分钟浓缩神课)](https://www.youtube.com/watch?v=9vM4p9NN0Ts)**<br>90 分钟讲透大厂内部 Scaling Law、数据合成、SFT 与 RLHF 全套工程经验配方。 | `05.5` · `07.5` · `12` |
+| **Stanford CS25** | 📺 **[Transformers United 系列讲座](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)**<br>OpenAI、Anthropic、Meta Llama、DeepSeek 一线主创亲自登台拆解核心技术。 | 全阶段拓展 |
+| **GPU Mode**<br>*([@GPUMode](https://www.youtube.com/@GPUMode))* | 📺 **Triton Kernels / FlashAttention / Quantization 专题讲座**<br>由 PyTorch 核心团队、FlashAttention 作者 Tri Dao、Unsloth 作者主讲的算子与推理加速天花板频道。 | `04` · `05` · `07` |
+| **李宏毅 (台大)**<br>*([@HungyiLeeNTU](https://www.youtube.com/@HungyiLeeNTU))* | 📺 **《生成式 AI 导论 2024/2025》**<br>华语圈把 **RLHF/GRPO 强化学习、RAG、Agent、Prompt Injection 攻防** 讲得最通俗幽默的导学课。 | `07.5` · `11` · `13` · `14` |
+| **李沐 (跟李沐学AI)**<br>*([@MuLi_AI](https://www.youtube.com/@MuLi_AI))* | 📺 **《Transformer / GPT-1~3 / InstructGPT 论文逐段精读》**<br>手把手教你如何像顶级系统研究员一样把一篇经典论文压榨干净。 | `01` · `03` · `06` |
+
+---
+
 ## 🤝 贡献与开源协议
 
 欢迎提交 Issue 或 PR 补充你的源码批注、`demos/` 实验脚本或消融实验结果。本项目采用 [MIT License](./LICENSE) 开源。
